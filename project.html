@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>football</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  body {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("wall.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #home {
+    height: 800px;
+    width: 100%;
+  }
+
+  .container1 {
+    float: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 250px 50px 50px 50px;
+    text-align: center;
+  }
+
+  .container1 button {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+
+  }
+
+  .container1 button:active {
+    border: 3px solid rgb(195, 125, 125);
+    background-color: black;
+    color: rgb(197, 197, 104);
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 30px;
+    
+  }
+
+  li a {
+    font-weight: bold;
+    font-size: 25px;
+    color: greenyellow;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+
+  li {
+    padding: 10px;
+    display: inline;
+  }
+
+  .nav {
+    float: right;
+    text-align: center;
+  }
+
+  div li a:hover {
+    text-decoration: underline;
+    color: aliceblue
+  }
+
+
+
+  #brands {
+    width: 100%;
+    height: 800px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+
+  }
+
+  #brands .card {
+    margin: auto;
+    height: 400px;
+    width: 300px;
+    border: 2px solid black;
+    background-color: white;
+  }
+
+  .card img:hover {
+    opacity: 1;
+  }
+
+  .card p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(25, 21, 21);
+  }
+
+  .card p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(25, 21, 21);
+  }
+
+  .card {
+    width: 100%;
+    margin: auto;
+    border: 2px solid;
+    background-color: white;
+    text-align: center;
+    color: black;
+  }
+
+  .card img {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    opacity: 0.8;
+  }
+
+  .card img:hover {
+    opacity: 1;
+  }
+
+
+  #shopping {
+    width: 100%;
+    
+  }
+
+  #shopping .card1 {
+    width: 100%;
+    margin: auto;
+    border: 2px solid;
+    background-color: white;
+    text-align: center;
+    color: black;
+    
+
+  }
+
+  .container01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    justify-items: auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: start;
+    grid-auto-flow: row;
+    
+  }
+
+
+
+  .container02 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 10px 10px;
+    justify-items: auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: start;
+    grid-auto-flow: row;
+
+  }
+
+  .container03 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    justify-items: auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: start;
+    grid-auto-flow: row;
+
+  }
+
+  .container04 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    justify-items: auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: start;
+    grid-auto-flow: row;
+
+  }
+
+  .container05 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 10px ;
+    justify-items: auto;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: start;
+    grid-auto-flow: row;
+
+  }
+
+  .card1 img:hover {
+    opacity: 1;
+  }
+
+  .card1 p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(25, 21, 21);
+  }
+
+  .card1 p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(25, 21, 21);
+  }
+
+  .card1 {
+    width: 100%;
+    margin: auto;
+    border: 2px solid;
+    background-color: white;
+    text-align: center;
+    color: black;
+  }
+
+  .card1 img {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    opacity: 0.8;
+  }
+
+  .card1 img:hover {
+    opacity: 1;
+  }
+
+
+  .card1 button {
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: black;
+    color: beige;
+    cursor: pointer;
+
+  }
+
+  .card1 button:active {
+    border: 3px solid violet;
+    background-color: grey;
+    color: rgb(197, 197, 104);
+  }
+
+  #help {
+    width: 100%;
+  }
+
+  .footer {
+    height: 20rem;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+
+
+  }
+
+  .cardlast {
+    position: relative;
+    float: left;
+    width: 31.53%;
+    margin: 5px;
+    top: 40px;
+   
+  }
+  .cardlast p{
+    padding: 7px;
+  }
+
+  .cardlast .icon {
+    width: 100%;
+    margin-top: 50px;
+
+
+  }
+
+  .icon a {
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .icon a:hover {
+    color: rgb(7, 101, 164);
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+
+  .cardlast form {
+    text-align: center;
+    padding: 10px;
+
+  }
+
+  form input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    text-align: center;
+
+
+  }
+
+  form input:hover {
+    overflow: hidden;
+    border: 3px solid rgb(3, 239, 231);
+  }
+
+  input[placeholder] {
+
+    font-weight: bold;
+  }
+
+  input[type="submit"] {
+    background-color: aqua;
+    border-radius: 40px;
+    padding: 10px;
+    border: 3px solid gray;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+
+  <nav>
+    <ul>
+      <div class="nav">
+        <li><a href="#home">home </a></li>
+        <li><a href="#brands">brands</a></li>
+        <li><a href="#shopping">shopping</a></li>
+        <li><a href="#help">help</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div class="container1">
+        <h1>flash collection </h1>
+        <button type="button" onclick="alert('welcome bro')"> welcome</button>
+      </div>
+    </section>
+    <section id="brands">
+      <h2 style="display: block; text-align: center; font-size: 70px;">brands</h2>
+      <div class="container2">
+        <div class="card">
+          <img src="../css and html/nike.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">well-known for their durability, design, and performance </p>
+        </div>
+        <div class="card">
+          <img src="../css and html/puma.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content"> blend sport-inspired design with street style and rugged look</p>
+        </div>
+        <div class="card">
+          <img src="../css and html/addidas.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content"> Adidas offers boots for hiking, winter, tactical use, and streetwear</p>
+        </div>
+        <div class="card">
+          <img src="../css and html/new bal.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">New Balance blends performance with a focus on comfort and foot support</p>
+        </div>
+        <div class="card">
+          <img src="../css and html/ua.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">primarily under the “Spotlight” and “Magnetico” collections</p>
+        </div>
+      </div>
+    </section>
+    <section id="shopping">
+      <h2 style="display: block; text-align: center; font-size: 70px;">nike collection</h2>
+      <div class="container01">
+        <div class="card1">
+          <img src="../css and html/b1.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Nike SFB</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b2.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Nike ACG</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b3.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Nike Lunar Force 1 Duckboot</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b4.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Nike Manoa Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b5.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Nike Path Winter Boots</p>
+          <button type="button">buy</button>
+        </div>
+      </div>
+      <h2 style="display: block; text-align: center; font-size: 70px;">puma collection</h2>
+      <div class="container02">
+        <div class="card1">
+          <img src="../css and html/b6.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Puma Desierto Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b7.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content"> Puma Rebound Rugged</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b8.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content"> Puma Trailfox Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b9.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">puma Explore Nitro Hiking Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b10.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Puma Anzarun</p>
+          <button type="button">buy</button>
+        </div>
+      </div>
+      <h2 style="display: block; text-align: center; font-size: 70px;">addidas collection</h2>
+      <div class="container03">
+        <div class="card1">
+          <img src="../css and html/b11.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Adidas Terrex Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b12.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Adidas GSG</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b13.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Adidas Winter</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b14.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">addidas m5</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b15.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">addidas f50 </p>
+          <button type="button">buy</button>
+        </div>
+      </div>
+      <h2 style="display: block; text-align: center; font-size: 70px;">newbalance collection</h2>
+      <div class="container04">
+        <div class="card1">
+          <img src="../css and html/b16.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">New Balance Tactical Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b17.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">New Balance Fresh Foam Hierro Mid GTX</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b18.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">New Balance All Terrain Boots</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b19.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">new balance A1000</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b20.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">new balance A1700</p>
+          <button type="button">buy</button>
+        </div>
+      </div>
+      <h2 style="display: block; text-align: center; font-size: 70px;">under armor collection</h2>
+      <div class="container05">
+        <div class="card1">
+          <img src="../css and html/b21.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content"> Under Armour CoreSpeed</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b22.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Under Armour Cl</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b23.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Under Armour Blur</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b24.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content">Under Armour Magnetico</p>
+          <button type="button">buy</button>
+        </div>
+        <div class="card1">
+          <img src="../css and html/b25.jpg" alt="pic" height="400px" width="300px">
+          <p class="card-content"> Under Armour Spotlight</p>
+          <button type="button">buy</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="help">
+      <div class="footer">
+        <div class="cardlast">
+          <p><i class="fa-solid fa-phone"></i> 8345435533</p>
+          <p><i class="fa-solid fa-envelope"></i> email:shahul11@gmail.com</p>
+          <p><i class="fa-solid fa-truck-fast"></i> address:180 periya pallivasal
+            street,vadakarai.627812</p>
+          <p><i class="fa-solid fa-building"></i> shop name:flash collection</p>
+        </div>
+
+        <div class="cardlast">
+          <form >
+
+
+            <input type="text" id="fname" name="fname" placeholder="Enter Id"><br>
+
+            <input type="text" id="pass" name="pass" placeholder="Enter password"><br>
+
+            <input type="text" id="email" name="email" placeholder="Enter email"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+
+        </div>
+        <div class="cardlast">
+          <p>about shop</p>
+          <p>© Fanatics, LLC., 2025. All Rights Reserved. </p>
+          <p>Customer Service</p>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
